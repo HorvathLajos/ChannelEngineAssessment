@@ -1,0 +1,13 @@
+C:\ChannelEngineAssessment\ChannelEngine.Business\bin\Debug\net8.0\ChannelEngine.Business.deps.json
+C:\ChannelEngineAssessment\ChannelEngine.Business\bin\Debug\net8.0\ChannelEngine.Business.dll
+C:\ChannelEngineAssessment\ChannelEngine.Business\bin\Debug\net8.0\ChannelEngine.Business.pdb
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.AssemblyInfoInputs.cache
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.AssemblyInfo.cs
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.csproj.CoreCompileInputs.cache
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.sourcelink.json
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.dll
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\refint\ChannelEngine.Business.dll
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.pdb
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ref\ChannelEngine.Business.dll
+C:\ChannelEngineAssessment\ChannelEngine.Business\obj\Debug\net8.0\ChannelEngine.Business.csproj.AssemblyReference.cache

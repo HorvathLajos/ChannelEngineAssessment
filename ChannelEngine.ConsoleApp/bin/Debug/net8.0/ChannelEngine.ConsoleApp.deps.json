@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ChannelEngine.ConsoleApp/1.0.0": {
+        "dependencies": {
+          "ChannelEngine.Business": "1.0.0"
+        },
+        "runtime": {
+          "ChannelEngine.ConsoleApp.dll": {}
+        }
+      },
+      "ChannelEngine.Business/1.0.0": {
+        "runtime": {
+          "ChannelEngine.Business.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChannelEngine.ConsoleApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ChannelEngine.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

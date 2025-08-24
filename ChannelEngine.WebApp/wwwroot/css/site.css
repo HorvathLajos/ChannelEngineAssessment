@@ -1,0 +1,90 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+:root {
+    --ce-navy: #003366;
+    --ce-blue: #00A3FF;
+    --ce-blue-hover: #008CCC;
+    --ce-gray-light: #f8f9fa;
+    --ce-gray-border: #dee2e6;
+    --ce-danger: #CC0000;
+    --ce-danger-bg: #FFE6E6;
+    --ce-success-bg: #E6F7FF;
+    --ce-success-text: #00539C;
+}
+
+.ce-header {
+    background-color: var(--ce-navy);
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+
+.ce-btn-primary {
+    background-color: var(--ce-blue);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.ce-btn-primary:hover {
+    background-color: var(--ce-blue-hover);
+    color: #fff;
+}
+
+.ce-alert-success {
+    background-color: var(--ce-success-bg);
+    color: var(--ce-success-text);
+    border-left: 4px solid var(--ce-blue);
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.ce-alert-error {
+    background-color: var(--ce-danger-bg);
+    color: var(--ce-danger);
+    border-left: 4px solid var(--ce-danger);
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.table thead {
+    background-color: var(--ce-navy);
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--ce-gray-light);
+}
+
+.table td,
+.table th {
+    border: 1px solid var(--ce-gray-border);
+    padding: 0.5rem;
+}
