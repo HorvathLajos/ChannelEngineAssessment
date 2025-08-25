@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ChannelEngine.Business.Models;
 using ChannelEngine.Business.Services;
+using ChannelEngine.Business.Models.ViewModels;
 
 namespace ChannelEngine.WebApp.Controllers
 {
@@ -31,11 +32,9 @@ namespace ChannelEngine.WebApp.Controllers
                     var modifiedProduct = await productService.UpdateStockAsync(productToModify, HttpContext.RequestAborted);
                     if (modifiedProduct is not null)
                     {
-                        top5 = top5.Select(p => p.MerchantProductNo == modifiedProduct.MerchantProductNo ? modifiedProduct : p).ToList();
-
                         model.LastUpdatedProductNo = modifiedProduct.MerchantProductNo;
                         model.LastUpdatedProductGtin = modifiedProduct.Gtin;
-                        model.LastUpdatedQuantity = modifiedProduct.TotalQuantity;
+                        model.LastUpdatedQuantity = modifiedProduct.StockLocation!.Stock;
                     }
                 }
                 catch (Exception stockEx)

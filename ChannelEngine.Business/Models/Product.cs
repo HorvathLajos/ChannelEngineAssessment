@@ -1,4 +1,6 @@
-﻿namespace ChannelEngine.Business.Models
+﻿using ChannelEngine.Business.Models.APICommunication;
+
+namespace ChannelEngine.Business.Models
 {
     public class Product
     {

@@ -1,4 +1,5 @@
 ﻿using ChannelEngine.Business.Models;
+using ChannelEngine.Business.Models.APICommunication;
 
 namespace ChannelEngine.Business.Clients
 {

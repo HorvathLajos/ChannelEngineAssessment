@@ -80,14 +80,14 @@
         }
       }
     },
-    "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj": {
+    "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\ChannelEngine.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj",
-        "projectName": "ChannelEngine.Tests",
-        "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj",
+        "projectUniqueName": "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\ChannelEngine.ConsoleApp.csproj",
+        "projectName": "ChannelEngine.ConsoleApp",
+        "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\ChannelEngine.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
-        "outputPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\obj\\",
+        "outputPath": "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -131,9 +131,107 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Hosting.WindowsServices": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj",
+        "projectName": "ChannelEngine.Tests",
+        "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\ChannelEngine.Tests.csproj",
+        "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
+        "outputPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\ChannelEngineAssessment\\ChannelEngine.Business\\ChannelEngine.Business.csproj": {
+                "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Business\\ChannelEngine.Business.csproj"
+              },
+              "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\ChannelEngine.ConsoleApp.csproj": {
+                "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.ConsoleApp\\ChannelEngine.ConsoleApp.csproj"
+              },
+              "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\ChannelEngine.WebApp.csproj": {
+                "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\ChannelEngine.WebApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.14.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -162,6 +260,79 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\ChannelEngine.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\ChannelEngine.WebApp.csproj",
+        "projectName": "ChannelEngine.WebApp",
+        "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\ChannelEngine.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Cat\\.nuget\\packages\\",
+        "outputPath": "C:\\ChannelEngineAssessment\\ChannelEngine.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Cat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\ChannelEngineAssessment\\ChannelEngine.Business\\ChannelEngine.Business.csproj": {
+                "projectPath": "C:\\ChannelEngineAssessment\\ChannelEngine.Business\\ChannelEngine.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

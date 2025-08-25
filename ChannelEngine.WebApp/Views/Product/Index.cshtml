@@ -1,4 +1,4 @@
-﻿@using ChannelEngine.Business.Models
+﻿@using ChannelEngine.Business.Models.ViewModels;
 @model ProductsViewModel
 
 @{
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 </head>
 <body class="container my-4">
-    <h1>Top (max) 5 Products by the total quantity sold </h1>
+    <h2>Top (max) 5 Products by the total quantity sold </h2>
 
     @if (Model?.Products?.Any() == true)
     {
@@ -23,7 +23,7 @@
                 <tr>
                     <th>Product</th>
                     <th>GTIN</th>
-                    <th>Quantity</th>
+                    <th>Quantity in orders</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,6 +38,12 @@
             </tbody>
         </table>
     }
+    else
+    {
+        <div class="alert alert-danger">
+            <strong>No products found</strong>
+        </div>
+    }
     @if (!string.IsNullOrEmpty(errorMessage))
     {
         <div class="alert alert-danger">
@@ -50,7 +56,7 @@
         <div class="alert alert-success">
             Stock updated: <strong>@Model.LastUpdatedProductNo</strong><br />
             (GTIN: @Model.LastUpdatedProductGtin)<br />
-            New quantity: <strong>@Model.LastUpdatedQuantity</strong>
+            New stock quantity: <strong>@Model.LastUpdatedQuantity</strong>
         </div>
     }
 </body>

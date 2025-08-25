@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChannelEngine.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8719d1bbe3a22a2b391fd82b76b51818d19b0df6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b07fa7282f3c6eb9640da1ed90f78936e5226469")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChannelEngine.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChannelEngine.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

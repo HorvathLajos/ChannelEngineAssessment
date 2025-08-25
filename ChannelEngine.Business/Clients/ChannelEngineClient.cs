@@ -1,7 +1,6 @@
 ﻿using ChannelEngine.Business.Models;
-using ChannelEngine.Business.Models.Options;
+using ChannelEngine.Business.Models.APICommunication;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System.Net.Http.Json;
 using System.Text.Json;
 
@@ -15,19 +14,16 @@ namespace ChannelEngine.Business.Clients
 
         public ChannelEngineClient(
             HttpClient httpClient,
-            ILogger<ChannelEngineClient> logger,
-            IOptions<ChannelEngineOptions> options)
+            ILogger<ChannelEngineClient> logger)
         {
             _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            var opts = options?.Value ?? throw new ArgumentNullException(nameof(options));
 
-            _apiKey = opts.ApiKey ?? string.Empty;
+            // Read from Azure KeyValult, Azure Appconfig or environment variables. For demo purposes, I use hardcoded defaults.
+            _apiKey = "541b989ef78ccb1bad630ea5b85c6ebff9ca3322";
+            var baseUrl = "https://api-dev.channelengine.net/api/v2/";
 
-            _httpClient.BaseAddress = string.IsNullOrEmpty(opts.BaseUrl) 
-                ? null 
-                : new Uri(opts.BaseUrl);
-
+            _httpClient.BaseAddress = new Uri(baseUrl);
             _httpClient.DefaultRequestHeaders.Add("X-CE-KEY", _apiKey);
         }
 
@@ -59,7 +55,7 @@ namespace ChannelEngine.Business.Clients
 
             var payload = new[] { request };
 
-            var response = await _httpClient.PutAsJsonAsync("v2/offer/stock", payload, ct);
+            var response = await _httpClient.PutAsJsonAsync("offer/stock", payload, ct);
 
             if (!response.IsSuccessStatusCode)
             {

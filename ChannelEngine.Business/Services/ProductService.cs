@@ -1,5 +1,6 @@
 ﻿using ChannelEngine.Business.Clients;
 using ChannelEngine.Business.Models;
+using ChannelEngine.Business.Models.APICommunication;
 using Microsoft.Extensions.Logging;
 
 namespace ChannelEngine.Business.Services
@@ -77,9 +78,9 @@ namespace ChannelEngine.Business.Services
 
                 var response = await client.UpdateStockAsync(request, ct);
 
-                logger.LogInformation("Stock updated successfully for MerchantProductNo {MerchantProductNo}", request.MerchantProductNo);
+                logger.LogDebug("Stock updated successfully for MerchantProductNo {MerchantProductNo}", request.MerchantProductNo);
                 
-                product.TotalQuantity = _updatedStockValue;
+                product.StockLocation!.Stock = _updatedStockValue;
                 return product;
             }
             catch (Exception ex)
